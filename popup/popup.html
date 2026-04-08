@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Group Bookmarks</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Tab Group Bookmarks</h1>
+  </header>
+
+  <main>
+    <!-- VIEW 1: Group List -->
+    <section id="view-groups">
+      <p class="view-label">Select a tab group to save:</p>
+      <div id="group-list"></div>
+    </section>
+
+    <!-- VIEW 2: Name Prompt -->
+    <section id="view-name" hidden>
+      <p class="view-label">This group has no name. Enter one:</p>
+      <div class="input-row">
+        <input
+          type="text"
+          id="group-name-input"
+          placeholder="Group name"
+          maxlength="100"
+          autocomplete="off"
+        />
+      </div>
+      <div class="btn-row">
+        <button class="btn-secondary" id="name-cancel">Cancel</button>
+        <button class="btn-primary" id="name-continue" disabled>Continue</button>
+      </div>
+    </section>
+
+    <!-- VIEW 3: Folder Picker -->
+    <section id="view-folders" hidden>
+      <p class="view-label">Choose a destination folder:</p>
+      <div id="folder-tree"></div>
+      <div class="btn-row">
+        <button class="btn-secondary" id="folder-cancel">Cancel</button>
+        <button class="btn-primary" id="folder-save" disabled>Save Here</button>
+      </div>
+    </section>
+
+    <!-- VIEW 4: Result -->
+    <section id="view-result" hidden>
+      <div id="result-message"></div>
+    </section>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

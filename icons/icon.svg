@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Three fanned bookmark ribbons in Chrome tab-group colors -->
+  <!-- Back bookmark (green) -->
+  <path d="M52 4H100Q104 4 104 8V68L76 84L48 68V8Q48 4 52 4Z" fill="#34a853"/>
+  <!-- Middle bookmark (orange) -->
+  <path d="M38 24H86Q90 24 90 28V88L62 104L34 88V28Q34 24 38 24Z" fill="#e8710a"/>
+  <!-- Front bookmark (blue) -->
+  <path d="M24 44H72Q76 44 76 48V108L48 124L20 108V48Q20 44 24 44Z" fill="#1a73e8"/>
+</svg>
